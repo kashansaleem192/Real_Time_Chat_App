@@ -1,0 +1,17 @@
+
+body { font-family: Arial, sans-serif; margin:0; padding:0; }
+.login-container { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; }
+.login-container input { margin:5px; padding:8px; width:200px; }
+.login-container button { padding:8px 16px; margin-top:10px; cursor:pointer; }
+.chat-page { display:flex; height:100vh; }
+.users-list { width:200px; border-right:1px solid #ccc; overflow-y:auto; }
+.user-item { padding:10px; cursor:pointer; }
+.user-item.selected { background-color:#eee; }
+.chat-box { flex:1; display:flex; flex-direction:column; }
+.messages { flex:1; padding:10px; overflow-y:auto; }
+.message { padding:5px 10px; margin:5px 0; border-radius:5px; max-width:60%; }
+.message.sent { background-color:#dcf8c6; align-self:flex-end; }
+.message.received { background-color:#fff; align-self:flex-start; }
+.message-input { display:flex; padding:10px; border-top:1px solid #ccc; }
+.message-input input { flex:1; padding:8px; }
+.message-input button { padding:8px 16px; margin-left:5px; cursor:pointer; }
