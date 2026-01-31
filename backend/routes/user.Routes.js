@@ -3,9 +3,9 @@ import { signUp, signIn, signOut, getUser, updateProfile } from "../controllers/
 import { isAuthenticated } from "../middlewares/auth.middleware.js"
 const router = express.Router()
 
-router.post("/signup", signUp)
-router.post("/signin", signIn)
-router.get("/signout",  isAuthenticated,signOut)
+router.post("/sign-up", signUp)
+router.post("/sign-in", signIn)
+router.get("/sign-out",  isAuthenticated,signOut)
 router.get("/me", isAuthenticated, getUser)
 router.put("/updateprofile", isAuthenticated,updateProfile)
 export default router
